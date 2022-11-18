@@ -1,0 +1,93 @@
+#react-cart .inner {
+  height: 100vh;
+  width: 40rem;
+  max-width: calc(100vw - 3rem);
+  padding: 0 1.5rem;
+  border: 0.1rem solid rgba(var(--color-foreground), 0.2);
+  border-right: 0;
+  background-color: rgb(var(--color-background)); 
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+#react-cart h2 {
+  text-align: center;
+  margin-top: 50px; 
+  margin-bottom: 0;
+}
+#react-cart .drawer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 11;
+}
+#react-cart .drawer .close-cart svg {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+#react-cart .drawer .close-cart {
+  display: inline-block;
+  padding: 0;
+  min-width: 4.4rem;
+  min-height: 4.4rem;
+  box-shadow: 0 0 0 0.2rem rgba(var(--color-button), 0);
+  position: absolute;
+  top: 10px;
+  right: 0;
+  color: rgb(var(--color-foreground));
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+#react-cart ul {
+  list-style: none;
+  padding: 50px 10px;
+  margin: 0;
+  max-height: 68vh;
+  overflow: auto;
+}
+#react-cart ul li {
+  padding: 0;
+  margin: 0 0 20px;
+  font-size: 12px;
+  display: flex;
+}
+#react-cart ul li > div:nth-child(2) {
+  flex: 1;
+  padding: 0 20px;
+}
+#react-cart ul li > div:nth-child(3) {
+  padding: 0 20px;
+}
+#react-cart ul li h3 {
+  font-size: 14px;
+  margin: 0;
+}
+#react-cart ul li > img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+#react-cart .drawer-quantity {
+  display: flex;
+}
+#react-cart .drawer-quantity input {
+  flex: 1;
+  max-width: 60px;
+  padding: 10px;
+  text-align: center;
+}
+#react-cart .remove-item {
+  appearance: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+#react-cart .empty-title {
+  margin: 130px 0 30px;
+}
